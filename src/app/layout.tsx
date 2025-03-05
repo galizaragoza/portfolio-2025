@@ -6,6 +6,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Mario Hinojosa Freire",
   description: "@galizaragozadev",
+  icons:{
+    icon: "../../public/favIcon.svg"
+  }
 };
 
 export default function RootLayout({

@@ -1,13 +1,10 @@
 "use client";
-
 import Image from "next/image";
-import { FaReact } from "react-icons/fa";
-import { FaHtml5 } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa";
-import { SiMongodb } from "react-icons/si";
-import { SiNextdotjs } from "react-icons/si";
-import { SiTypescript } from "react-icons/si";
+import { FaReact, FaHtml5, FaNodeJs, FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { SiMongodb, SiNextdotjs, SiTypescript } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
+import { IoMdMail } from "react-icons/io";
+import { FaSquareWhatsapp } from "react-icons/fa6";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { AiFillOpenAI } from "react-icons/ai";
 import {
@@ -18,9 +15,8 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Link from "next/link";
-import screenshot1 from '../../public/estudents/screenshot1.jpg';
-import screenshot2 from '../../public/estudents/screenshot2.jpg';
-import screenshot3 from '../../public/estudents/screenshot3.jpg';
+import estudents from '../../public/estudents.jpg';
+import logotask from '../../public/logotask.jpg'
 import { motion } from "framer-motion";
 
 const textVariants = {
@@ -117,63 +113,52 @@ export default function Home() {
                     viewport={{ once: true }}
                     variants={textVariants}
                   >
-                    <Link
-                      className="text-4xl font-bold hover:text-blue-900 transition-colors"
-                      href={'https://www.estudents.xyz'}
-                      target="_blank"
-                    >
-
-                      eStudents
-                    </Link>
-                  </motion.div>
-                  <motion.div
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    variants={textVariants}
-                  >
                     <Carousel>
                       <CarouselContent>
                         <CarouselItem>
+                          <h2 className="text-4xl font-bold">
+                            eStudents
+                          </h2>
                           <Link href={'https://www.estudents.xyz'} target="_blank">
                             <Image
-                              src={screenshot1}
+                              src={estudents}
                               alt="eStudents"
                               height={1600}
                               width={2400}
                               className="hover:opacity-70 transition-opacity"
-                            /></Link>
+                            />
+                          </Link>
+                          <p className="text-xl pt-4"
+                          >
+                            eStudents es una start-up que yo mismo cofundé con dos amigos míos. Los detalles puedes conocerlos visitando la página (clicando en la imagem), está hecha íntegramente por mí
+                            y tiene detrás cientos de horas de trabajo.
+                          </p>
                         </CarouselItem>
                         <CarouselItem>
-                          <Link href={'https://www.estudents.xyz/en/newsletter'} target="_blank">
+                          <h2 className="text-4xl font-bold">
+                            TaskTalk
+                          </h2>
+                          <Link href={'https://www.estudents.xyz'} target="_blank">
                             <Image
-                              src={screenshot2}
+                              src={logotask}
                               alt="eStudents"
                               height={1600}
                               width={2400}
                               className="hover:opacity-70 transition-opacity"
-                            /></Link>
-                        </CarouselItem>
-                        <CarouselItem>
-                          <Link href={'https://www.estudents.xyz/en/about-us'} target="_blank">
-                            <Image
-                              src={screenshot3}
-                              alt="eStudents"
-                              height={1600}
-                              width={2400}
-                              className="hover:opacity-70 transition-opacity"
-                            /></Link>
+                            />
+                          </Link>
+                          <p className="text-xl pt-4"
+                          >
+                            TaskTalk fue mi proyecto de final del Bootcamp que hice en Nuclio Digital School, el proyecto consiste en una aplicación de gestión de tareas en tableros, similar
+                            a Asana, así como chat P2P y videollamadas. Ahora mismo no se encuentra levantado, pero puedes visitar el repositorio del backend y el del frontend clicando
+                            en la imagen
+                          </p>
                         </CarouselItem>
                       </CarouselContent>
                       <CarouselPrevious />
                       <CarouselNext />
                     </Carousel>
                   </motion.div>
-                  <motion.p
-                    className="text-xl pt-4">
-                    eStudents es una start-up que yo mismo cofundé con dos amigos míos. Los detalles puedes conocerlos visitando la página (clicando en cualquier imagen), está hecha íntegramente por mí
-                    y tiene detrás cientos de horas de trabajo.
-                  </motion.p>
                 </div>
               </div>
             </section>
@@ -193,7 +178,7 @@ export default function Home() {
                     Curso de desarrollo Full-Stack impartido por DePC
                   </p>
                   <p className="text-3xl max-w-[70%] pt-10">
-                    Máster en desarrollo Full-Stack impartido por Nuclio Digital School {"  "}
+                    Máster en desarrollo Full-Stack impartido por Nuclio Digital School{"  "}
                     <Link
                       href={'https://drive.google.com/file/d/1nBRw1K_eHOmiBlqCY6pB7e0JLRn9dIDn/view?usp=sharing'}
                       target="_blank"
@@ -218,11 +203,63 @@ export default function Home() {
                   </p>
                   <p className="text-3xl max-w-[70%] pt-10">
                     Desarrollador full-stack en solitario para
-                    eStudents 
+                    eStudents
                   </p>
                 </motion.div>
               </div>
             </section>
+            {/* Sección de Contacto animada */}
+            <motion.section
+              id="contact"
+              className="min-h-screen"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={textVariants}
+            >
+              <h2 className="text-5xl pt-10 font-semibold">
+                Puedes contactarme vía email o LinkedIn
+              </h2>
+              <h3 className="text-4xl pt-4 font-semibold">
+                Y aquí tienes también mi CV y el resto de mis redes
+              </h3>
+              <div className="pt-4">
+                <ul className="pt-10 flex flex-row justify-evenly gap-8">
+                  <li>
+                    <Link href={'https://github.com/galizaragoza'} target="_blank">
+                      <FaGithubSquare size={60} />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={'https://www.linkedin.com/in/mario-hinojosa/'} target="_blank">
+                      <FaLinkedin size={60} className="text-[#3661bf]" />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={'mailto:galizaragozadev@gmail.com'} target="_blank">
+                      <IoMdMail size={60} />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={'https://wa.me/+34644458505'} target="_blank">
+                      <FaSquareWhatsapp size={60} className="text-[#66c259]" />
+                    </Link>
+                  </li>
+                </ul>
+                <div className="pt-20 flex flex-row justify-evenly">
+                  <Link href={'/resume'} target="_blank">
+                    <h3 className="text-3xl hover:text-blue-900 transition-colors hover:underline">
+                      My resume (English)
+                    </h3>
+                  </Link>
+                  <Link href={'/curriculum'} target="_blank">
+                    <h3 className="text-3xl hover:text-blue-900 transition-colors hover:underline">
+                      Mi currículum (Castellano)
+                    </h3>
+                  </Link>
+                </div>
+              </div>
+            </motion.section>
             <motion.section
               id="about"
               className="min-h-screen"

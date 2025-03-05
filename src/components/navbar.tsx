@@ -1,7 +1,11 @@
 'use client';
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const pathname = usePathname();
+  if (pathname !== '/') return null; // Solo muestra la navbar en la raíz
+
   return (
     <nav className="fixed top-12 left-12 w-72 h-[20vh] px-4 py-4 bg-gray-900 shadow-md rounded-md flex flex-col justify-between">
       <h2 className="text-xl font-bold text-white">
