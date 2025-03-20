@@ -38,7 +38,7 @@ export default function Home() {
                 viewport={{ once: true }}
                 variants={textVariants}
               >
-                Hola, soy Mario, desarrollador web fullstack
+                Soy Mario, desarrollador web <br /> full-stack
               </motion.h1>
               <motion.h2
                 className="text-black text-4xl tracking-wide leading-snug pt-4 font-semibold"
@@ -150,8 +150,9 @@ export default function Home() {
                           <p className="text-xl pt-4"
                           >
                             TaskTalk fue mi proyecto de final del Bootcamp que hice en Nuclio Digital School, el proyecto consiste en una aplicación de gestión de tareas en tableros, similar
-                            a Asana, así como chat P2P y videollamadas. Ahora mismo no se encuentra levantado, pero puedes visitar el repositorio del backend y el del frontend clicando
-                            en la imagen
+                            a Asana, así como chat P2P y videollamadas. Ahora mismo no se encuentra levantado, aquí tienes el <Link href={'https://github.com/FSDSTR1023/naranja-backend'} 
+                            className="text-blue-700 hover:underline">backend</Link> y aquí el <Link href={'https://github.com/FSDSTR1023/naranja-frontend'} 
+                            className="text-blue-700 hover:underline">frontend</Link>
                           </p>
                         </CarouselItem>
                       </CarouselContent>
