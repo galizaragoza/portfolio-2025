@@ -13,16 +13,10 @@ const Navbar = () => {
       </h2>
       <div className="flex flex-col space-y-2">
         <Link
-          href="#projects"
-          className="text-base text-white hover:text-gray-300 transition-colors"
+          href="#projects-heading"
+          className="text-base text-white hover:text-gray-300 transition-colors cursor-pointer"
         >
           Proyectos
-        </Link>
-        <Link
-          href="#xp"
-          className="text-base text-white hover:text-gray-300 transition-colors"
-        >
-          Formación y experiencia
         </Link>
         <Link
           href="#contact"
