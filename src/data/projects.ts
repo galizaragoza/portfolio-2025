@@ -21,7 +21,7 @@ export const projects: Project[] = [
     image: estudentsImg,
     alt: "Captura de eStudents",
     description:
-      "eStudents es una start-up que cofundé. Soy el desarrollador único y el MVP está previsto para Agosto, puedes visitar la landing page clicando en la imagen.",
+      "eStudents es una start-up que cofundé junto a dos compañeros. En ella ocupo un rol de programador full-stack, aunque también desempeño funciones de DevOps. Ahora mismo, la página se encuentra en fase de desarrollo, pero puedes visitar la landing page clicando en la imagen.",
   },
   {
     title: "TaskTalk",
@@ -42,7 +42,11 @@ export const projects: Project[] = [
     alt: "Captura de HaciendaSomosTodos",
     description:
       "Pequeño proyecto que calcula la aportación total vitalicia en impuestos mediante un formulario.",
+    links: [
+      { label: "Repositorio", href: "https://github.com/galizaragoza/haciendasomosotodos" },
+    ],
   },
+
   {
     title: "CyberTarot",
     href: "https://cyber-tarot.vercel.app",
@@ -50,5 +54,8 @@ export const projects: Project[] = [
     alt: "Captura de CyberTarot",
     description:
       "Otro pequeño proyecto centrado en UX/UI, en el se ve la colección de cartas de un videojuego con sus repsectivas descripciones.",
+    links: [
+      { label: "Repositorio", href: "https://github.com/galizaragoza/cyber_tarot" },
+    ],
   }
 ];

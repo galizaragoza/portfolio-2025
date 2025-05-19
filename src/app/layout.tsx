@@ -21,9 +21,10 @@ export default function RootLayout({
     <html lang="en">
 
       <body
-        className={`${manrope.className} antialiased`}
-      ><Navbar />
+        className={`${manrope.className} antialiased overflow-x-hidden`}
+      >
         <Background>
+          <Navbar />
           {children}
         </Background>
       </body>
