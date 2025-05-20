@@ -26,7 +26,7 @@ export default function ProjectCarousel({ items }: Props) {
   return (
     <section
       aria-labelledby="projects-heading"
-      className="py-20 min-h-screen"
+      className="pt-30 min-h-fit"
       role="region"
       aria-roledescription="carousel"
     >

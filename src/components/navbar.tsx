@@ -14,17 +14,18 @@ const Navbar = () => {
       </h2>
       <div className="flex flex-col space-y-2">
         <Link
-          href="#about"
-          className="text-base text-white hover:text-gray-300 transition-colors"
-        >
-          Experiencia
-        </Link>
-        <Link
           href="#projects-heading"
           className="text-base text-white hover:text-gray-300 transition-colors cursor-pointer"
         >
           Proyectos
         </Link>
+        <Link
+          href="#experience"
+          className="text-base text-white hover:text-gray-300 transition-colors"
+        >
+          Experiencia
+        </Link>
+
         <Link
           href="#about"
           className="text-base text-white hover:text-gray-300 transition-colors"
@@ -32,7 +33,7 @@ const Navbar = () => {
           Formación y certificados
         </Link>
         <Link
-          href="#contact"
+          href="/contact"
           className="text-base text-white hover:text-gray-300 transition-colors"
         >
           Contacto

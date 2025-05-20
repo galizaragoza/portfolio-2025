@@ -3,6 +3,8 @@ import TechStack from "@/components/TechStack";
 import Hero from "@/components/Hero";
 import ProjectCarousel from "@/components/ProjectCarousel";
 import { techStack } from "@/data/techStack";
+import Experience from "@/components/Experience";
+import Education from "@/components/Education";
 import { projects } from "@/data/projects";
 
 export default function Home() {
@@ -11,12 +13,13 @@ export default function Home() {
       <main className="flex flex-col min-h-screen">
         <div className="flex justify-end">
           <div className="w-[70%] pe-20 pt-40 text-start">
-            <div className="flex flex-col min-h-screen">
+            <div className="flex flex-col min-h-[50vh]">
               <Hero />
               <TechStack items={techStack} />
             </div>
             <ProjectCarousel items={projects} />
-
+            <Experience />
+            <Education />
           </div>
         </div>
       </main>
