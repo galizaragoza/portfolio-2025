@@ -5,7 +5,7 @@ import { IoMdMail } from "react-icons/io";
 import { SiCredly } from "react-icons/si";
 
 
-const Navbar = () => {
+const NavBar = () => {
 
   return (
     <nav className="fixed top-12 left-12 w-72 h-[fit] px-4 py-4 bg-gray-900 shadow-md rounded-md flex flex-col justify-between">
@@ -33,7 +33,7 @@ const Navbar = () => {
           Formación y certificados
         </Link>
         <Link
-          href="/contact"
+          href="#contact"
           className="text-base text-white hover:text-gray-300 transition-colors"
         >
           Contacto
@@ -67,4 +67,4 @@ const Navbar = () => {
   );
 }
 
-export default Navbar;
+export default NavBar;

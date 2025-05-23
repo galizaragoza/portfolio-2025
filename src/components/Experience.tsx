@@ -21,7 +21,7 @@ const Experience = () => {
                         Utilizo LLMs para agilizar y optimizar mis tareas y elaboro documentación e informes diarios sobre los cambios y actualizaciones para mis compañeros.
                         También participo en las reuniones en las que se deciden los siguientes pasos y los objetivos a cumplir.
                     </p>
-                    <p className='text-xl md:text-xl text-gray-900 text-start font-bold mt-2 cursor-pointer hover:underline'>El sitio principal aún se encuentra en fase de desarrollo,
+                    <p className='text-xl md:text-xl text-gray-900 text-start font-bold mt-2'>El sitio principal aún se encuentra en fase de desarrollo,
                         puedes visitar la landing clicando en la imagen de la sección de proyectos</p>
 
                 </div>

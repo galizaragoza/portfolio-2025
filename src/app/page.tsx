@@ -5,6 +5,7 @@ import ProjectCarousel from "@/components/ProjectCarousel";
 import { techStack } from "@/data/techStack";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
+import ContactSection from "@/components/ContactMe";
 import { projects } from "@/data/projects";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
             <ProjectCarousel items={projects} />
             <Experience />
             <Education />
+            <ContactSection />
           </div>
         </div>
       </main>

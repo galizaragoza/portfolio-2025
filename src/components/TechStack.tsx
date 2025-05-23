@@ -11,7 +11,7 @@ export default function TechStack({ items }: Props) {
     <section aria-labelledby="tech-heading" className="pt-8 mx-auto pt-20">
       <ul className="flex flex-wrap gap-8">
         {items.map(({ Icon, color, label }) => (
-          <li key={label} aria-label={label}>
+          <li key={label} aria-label={label} className="hover:scale-120 transition-transform duration-300 ease-in-out">
             <Icon size={60} style={{ color }} />
           </li>
         ))}

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import manrope from "../../lib/fonts";
-import Navbar from "@/components/Navbar";
+import NavBar from "@/components/NavBar";
 import "./globals.css";
 import Background from "@/components/Background";
 
@@ -24,7 +24,7 @@ export default function RootLayout({
         className={`${manrope.className} antialiased overflow-x-hidden`}
       >
         <Background>
-          <Navbar />
+          <NavBar />
           {children}
         </Background>
       </body>

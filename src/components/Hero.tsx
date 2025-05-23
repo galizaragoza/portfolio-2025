@@ -28,7 +28,7 @@ export default function Hero() {
         variants={containerVariants}
       >
         <motion.h1
-          className="text-5xl md:text-7xl font-extrabold text-black drop-shadow-lg"
+          className="text-5xl md:text-7xl font-extrabold text-black drop-shadow-lg animate-pulse"
           variants={itemVariants}
         >
           Mario Hinojosa Freire
@@ -47,13 +47,16 @@ export default function Hero() {
         >
           <Link
             href="#projects-heading"
-            className="inline-block px-8 py-3 bg-blue-800 hover:bg-gray-900 text-white font-semibold rounded-lg transition"
+            className="inline-block px-8 py-3 bg-blue-800 hover:bg-gray-900
+             text-white font-semibold rounded-lg transition.transform duration-300 hover:scale-105"
           >
             Ver proyectos
           </Link>
           <Link
             href="#contact"
-            className="inline-block px-8 py-3 border-2 bg-black hover:border-black border-white text-white hover:bg-white hover:text-gray-900 font-semibold rounded-lg transition"
+            className="inline-block px-8 py-3 border-2 bg-black hover:border-black
+             border-white text-white hover:bg-white hover:text-gray-900 
+             font-semibold rounded-lg transition-transform duration-300 hover:scale-105"
           >
             Contáctame
           </Link>
