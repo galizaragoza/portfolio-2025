@@ -1,7 +1,8 @@
 // components/Hero.tsx
 "use client";
 import { motion } from "framer-motion";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 
 // Usamos MotionLink para animar los <Link>
 const MotionLink = motion(Link);
@@ -38,7 +39,19 @@ const buttonVariants = {
   tap: { scale: 0.95, transition: { duration: 0.2, ease: "easeInOut" } },
 };
 
+// Variants para cada letra
+const letterVariants = {
+  hidden: { y: 0 },
+  visible: {
+    y: [0, -8, 0],
+    transition: { duration: 1.2, ease: "easeInOut", repeat: Infinity },
+  },
+};
+
 export default function Hero() {
+  const t = useTranslations("Hero");
+  const title = "Mario Hinojosa Freire";
+
   return (
     <motion.section
       className="flex items-center justify-center px-4 text-center"
@@ -48,20 +61,26 @@ export default function Hero() {
       variants={sectionVariants}
     >
       <motion.div className="max-w-3xl space-y-8" variants={itemVariants}>
+        {/* Título “ola” */}
         <motion.h1
-          className="text-5xl md:text-7xl font-extrabold text-black drop-shadow-lg animate-pulse"
-          variants={itemVariants}
+          className="text-5xl md:text-7xl font-extrabold text-black drop-shadow-lg"
+          // controlamos el desfase entre letras
+          initial="hidden"
+          animate="visible"
+          variants={{ visible: { transition: { staggerChildren: 0.07 } } }}
         >
-          Mario Hinojosa Freire
+          {title.split("").map((char, i) => (
+            <motion.span key={i} variants={letterVariants}>
+              {char}
+            </motion.span>
+          ))}
         </motion.h1>
 
         <motion.p
           className="text-lg md:text-2xl text-gray-900 max-w-2xl mx-auto"
           variants={itemVariants}
         >
-          Desarrollador web fullstack, cofundador y programador de eStudents,
-          apasionado por la tecnología y la programación, en busca de nuevos
-          desafíos y en constante aprendizaje.
+          {t("description")}
         </motion.p>
 
         <motion.div
@@ -75,7 +94,7 @@ export default function Hero() {
             whileHover="hover"
             whileTap="tap"
           >
-            Ver proyectos
+            {t("viewProjects")}
           </MotionLink>
 
           <MotionLink
@@ -86,7 +105,7 @@ export default function Hero() {
             whileHover="hover"
             whileTap="tap"
           >
-            Contáctame
+            {t("contactMe")}
           </MotionLink>
         </motion.div>
       </motion.div>

@@ -1,10 +1,11 @@
 // components/NavBar.tsx
 "use client";
 import { motion } from "framer-motion";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { SiCredly } from "react-icons/si";
+import { useTranslations } from "next-intl";
 
 const navVariants = {
   hidden: { opacity: 0, x: -100 },
@@ -16,6 +17,7 @@ const navVariants = {
 };
 
 const NavBar = () => {
+  const t = useTranslations("Nav");
   return (
     <motion.nav
       className="fixed top-12 left-12 w-72 h-[fit] px-4 py-4 bg-gray-900 shadow-md rounded-md flex flex-col justify-between"
@@ -31,25 +33,25 @@ const NavBar = () => {
           href="#projects-heading"
           className="text-base text-white hover:text-gray-300 transition-colors cursor-pointer"
         >
-          Proyectos
+          {t("projects")}
         </Link>
         <Link
           href="#experience"
           className="text-base text-white hover:text-gray-300 transition-colors"
         >
-          Experiencia
+          {t("experience")}
         </Link>
         <Link
           href="#about"
           className="text-base text-white hover:text-gray-300 transition-colors"
         >
-          Formación y certificados
+          {t("education")}
         </Link>
         <Link
           href="#contact"
           className="text-base text-white hover:text-gray-300 transition-colors"
         >
-          Contacto
+          {t("contact")}
         </Link>
       </div>
       <div>

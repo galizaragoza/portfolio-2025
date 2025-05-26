@@ -1,0 +1,40 @@
+{
+  "Hero": {
+    "title": "Mario Hinojosa Freire",
+    "description": "Fullstack web developer, co-founder and programmer at eStudents, passionate about technology and programming, seeking new challenges and continuously learning.",
+    "viewProjects": "View projects",
+    "contactMe": "Contact me"
+  },
+  "Nav": {
+    "projects": "Projects",
+    "experience": "Experience",
+    "education": "Education & Certifications",
+    "contact": "Contact"
+  },
+  "Contact": {
+    "title": "Let's talk",
+    "description": "If you have any questions, a project in mind, or you're recruiting and interested in my profile, please don't hesitate to contact me via LinkedIn or email (you have both links in the top left corner).",
+    "emailPrompt": "You can also write to me at: galizaragozadev@gmail.com",
+    "footer": "I'll make time as soon as possible so we can meet and delve into the details of your inquiry."
+  },
+  "Education": {
+    "heading": "Education & Certifications",
+    "masterTitle": "Master's in Full-Stack Development / October 2023 - May 2024",
+    "masterInstitution": "Nuclio Digital School",
+    "masterDescription": "Master's in Full-Stack Development from Nuclio Digital School (October 2023 – March 2024), which I completed intensively and online covering both front-end and back-end topics. I learned and applied key technologies —React, JavaScript (HTML, CSS, and Tailwind), Node.js, WebSockets, and MongoDB— and delved into web protocols, coding best practices, and security in development. I worked under agile methodologies (SCRUM) and used version control with Git as well as continuous integration/continuous delivery (CI/CD) processes. Thanks to practical projects, I strengthened my communication, adaptability, teamwork, and mediation skills, developing real end-to-end solutions and collaborating effectively with my peers to ensure application quality and scalability.",
+    "certificates": "Certificates"
+  },
+  "Experience": {
+    "heading": "Experience",
+    "position": "eStudents / September 2024 - Present",
+    "roleTitle": "Fullstack Web Developer",
+    "description1": "eStudents is a startup where I serve as a full-stack developer, responsible for designing, implementing, and deploying the web application, from the database to the user interface. I also perform other functions, such as DevOps.",
+    "description2": "In this role, I use a wide variety of languages and frameworks, such as Next, Node, MongoDB, Tailwind, React, and TypeScript. I use LLMs to streamline and optimize my tasks and produce daily documentation and reports on changes and updates for my teammates. I also participate in meetings where next steps and objectives are decided.",
+    "note": "The main site is still under development; you can visit the landing page by clicking the image in the projects section."
+  },
+  "Projects": {
+    "heading": "My projects",
+    "previous": "Previous",
+    "next": "Next"
+  }
+}

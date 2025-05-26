@@ -2,7 +2,8 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import {
   Carousel,
   CarouselContent,
@@ -23,6 +24,7 @@ const cardVariants = {
 };
 
 export default function ProjectCarousel({ items }: Props) {
+  const t = useTranslations("Projects");
   return (
     <section
       aria-labelledby="projects-heading"
@@ -30,19 +32,29 @@ export default function ProjectCarousel({ items }: Props) {
       role="region"
       aria-roledescription="carousel"
     >
-      <div className="max-w-6xl mx-auto px-4">
+      <motion.div
+        className="max-w-6xl mx-auto px-4"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={cardVariants}
+      >
         <h2
           id="projects-heading"
           className="text-4xl md:text-5xl font-extrabold text-gray-800 text-center mb-12"
         >
-          Mis proyectos
+          {t("heading")}
         </h2>
 
         <div className="relative">
           <Carousel>
             <CarouselContent className="space-x-8">
               {items.map((proj) => (
-                <CarouselItem key={proj.title} role="group" aria-label={proj.title}>
+                <CarouselItem
+                  key={proj.title}
+                  role="group"
+                  aria-label={proj.title}
+                >
                   <motion.div
                     className="bg-white/80 backdrop-blur-md rounded-2xl shadow-lg overflow-hidden"
                     initial="hidden"
@@ -55,7 +67,11 @@ export default function ProjectCarousel({ items }: Props) {
                     </h3>
                     <div className="relative w-full h-[400px] md:h-[600px] mt-4 overflow-hidden rounded-t-2xl">
                       {proj.href ? (
-                        <Link href={proj.href} target="_blank" className="block">
+                        <Link
+                          href={proj.href}
+                          target="_blank"
+                          className="block"
+                        >
                           <Image
                             src={proj.image}
                             alt={proj.alt}
@@ -96,22 +112,21 @@ export default function ProjectCarousel({ items }: Props) {
             </CarouselContent>
 
             <CarouselPrevious
-              aria-label="Anterior"
+              aria-label={t("previous")}
               className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white/70 hover:bg-white text-gray-800 p-3 rounded-full shadow-md transition"
             >
               <FaChevronLeft size={20} />
             </CarouselPrevious>
 
             <CarouselNext
-              aria-label="Siguiente"
+              aria-label={t("next")}
               className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/70 hover:bg-white text-gray-800 p-3 rounded-full shadow-md transition"
             >
               <FaChevronRight size={20} />
             </CarouselNext>
-
           </Carousel>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
