@@ -15,6 +15,7 @@ export default function Home() {
         <div className="flex justify-end">
           <div className="w-[70%] pe-20 pt-40 text-start">
             <div className="flex flex-col min-h-[50vh]">
+              
               <Hero />
               <TechStack items={techStack} />
             </div>
