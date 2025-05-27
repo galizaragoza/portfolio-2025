@@ -1,4 +1,3 @@
-// components/LangSwitch.tsx
 "use client";
 
 import { usePathname, Link } from "@/i18n/navigation";
@@ -22,13 +21,17 @@ export default function LangSwitch() {
   return (
     <div className="absolute top-10 right-10 z-50">
       <DropdownMenu>
-        <DropdownMenuTrigger className="p-2 rounded-full bg-gray-200 transition">
-          <FaLanguage size={40} />
+        <DropdownMenuTrigger className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 transition">
+          <FaLanguage size={40} className="text-gray-800 dark:text-gray-200" />
         </DropdownMenuTrigger>
-        <DropdownMenuContent align="end">
+        <DropdownMenuContent className="bg-white dark:bg-gray-800">
           {locales.map(({ code, label }) => (
             <DropdownMenuItem key={code} asChild>
-              <Link href={path} locale={code} className="w-full">
+              <Link
+                href={path}
+                locale={code}
+                className="w-full text-gray-800 dark:text-gray-200"
+              >
                 {label}
               </Link>
             </DropdownMenuItem>

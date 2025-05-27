@@ -1,4 +1,3 @@
-// components/TechStack.tsx
 "use client";
 import { motion } from "framer-motion";
 import { TechItem } from "@/data/techStack";
@@ -29,13 +28,13 @@ export default function TechStack({ items }: Props) {
   return (
     <motion.section
       aria-labelledby="tech-heading"
-      className="pt-8 mx-auto pt-20"
+      className="pt-8 md:pt-20"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
       variants={containerVariants}
     >
-      <motion.ul className="flex flex-wrap gap-8" variants={containerVariants}>
+      <motion.ul className="flex flex-wrap gap-8 justify-center px-4 sm:px-6 lg:px-8" variants={containerVariants}>
         {items.map(({ Icon, color, label }) => (
           <motion.li
             key={label}

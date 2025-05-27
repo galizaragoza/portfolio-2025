@@ -1,4 +1,3 @@
-// components/ProjectCarousel.tsx
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -28,12 +27,12 @@ export default function ProjectCarousel({ items }: Props) {
   return (
     <section
       aria-labelledby="projects-heading"
-      className="pt-30 min-h-fit"
+      className="pt-8 pb-16 min-h-fit"
       role="region"
       aria-roledescription="carousel"
     >
       <motion.div
-        className="max-w-6xl mx-auto px-4"
+        className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -41,7 +40,7 @@ export default function ProjectCarousel({ items }: Props) {
       >
         <h2
           id="projects-heading"
-          className="text-4xl md:text-5xl font-extrabold text-gray-800 text-center mb-12"
+          className="text-4xl md:text-5xl font-extrabold text-gray-800 dark:text-gray-100 text-center mb-12"
         >
           {t("heading")}
         </h2>
@@ -56,22 +55,18 @@ export default function ProjectCarousel({ items }: Props) {
                   aria-label={proj.title}
                 >
                   <motion.div
-                    className="bg-white/80 backdrop-blur-md rounded-2xl shadow-lg overflow-hidden"
+                    className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md rounded-2xl shadow-lg overflow-hidden"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
                     variants={cardVariants}
                   >
-                    <h3 className="text-2xl font-bold text-gray-900 px-6 pt-6">
+                    <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100 px-6 pt-6">
                       {proj.title}
                     </h3>
                     <div className="relative w-full h-[400px] md:h-[600px] mt-4 overflow-hidden rounded-t-2xl">
                       {proj.href ? (
-                        <Link
-                          href={proj.href}
-                          target="_blank"
-                          className="block"
-                        >
+                        <Link href={proj.href} target="_blank" className="block">
                           <Image
                             src={proj.image}
                             alt={proj.alt}
@@ -89,7 +84,9 @@ export default function ProjectCarousel({ items }: Props) {
                       )}
                     </div>
                     <div className="px-6 py-4">
-                      <p className="text-gray-700 mb-4">{proj.description}</p>
+                      <p className="text-gray-700 dark:text-gray-300 mb-4">
+                        {proj.description}
+                      </p>
                       {proj.links?.length && (
                         <ul className="flex flex-wrap gap-4">
                           {proj.links.map((link) => (
@@ -97,7 +94,7 @@ export default function ProjectCarousel({ items }: Props) {
                               <Link
                                 href={link.href}
                                 target="_blank"
-                                className="text-blue-600 hover:underline font-medium"
+                                className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
                               >
                                 {link.label}
                               </Link>
@@ -113,14 +110,14 @@ export default function ProjectCarousel({ items }: Props) {
 
             <CarouselPrevious
               aria-label={t("previous")}
-              className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white/70 hover:bg-white text-gray-800 p-3 rounded-full shadow-md transition"
+              className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white/70 dark:bg-gray-700/70 hover:bg-white dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 p-3 rounded-full shadow-md transition"
             >
               <FaChevronLeft size={20} />
             </CarouselPrevious>
 
             <CarouselNext
               aria-label={t("next")}
-              className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/70 hover:bg-white text-gray-800 p-3 rounded-full shadow-md transition"
+              className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/70 dark:bg-gray-700/70 hover:bg-white dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 p-3 rounded-full shadow-md transition"
             >
               <FaChevronRight size={20} />
             </CarouselNext>

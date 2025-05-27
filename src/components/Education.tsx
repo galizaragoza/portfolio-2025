@@ -10,28 +10,28 @@ const Education = () => {
   const t = useTranslations("Education");
   return (
     <section
-      className="flex items-center justify-center px-4 text-center min-h-[60vh]"
       id="experience"
+      className="flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 text-center min-h-[60vh]"
     >
       <div>
-        <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 text-end mb-12">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 dark:text-gray-100 text-end mb-12">
           {t("heading")}
         </h2>
         <div>
-          <h3 className="text-2xl md:text-3xl font-extrabold text-gray-800 text-end mb-2">
+          <h3 className="text-2xl md:text-3xl font-extrabold text-gray-800 dark:text-gray-100 text-end mb-2">
             {t("masterTitle")}
           </h3>
-          <h4 className="text-2xl md:text-2xl font-extrabold text-gray-600 text-end mb-2">
+          <h4 className="text-2xl md:text-2xl font-extrabold text-gray-600 dark:text-gray-400 text-end mb-2">
             {t("masterInstitution")}
           </h4>
-          <p className="text-xl md:text-xl text-gray-800 text-end font-semibold">
+          <p className="text-xl md:text-xl text-gray-800 dark:text-gray-200 text-end font-semibold">
             {t("masterDescription")}
           </p>
         </div>
-        <h3 className="text-2xl md:text-3xl font-extrabold text-gray-800 text-end mb-2 mt-20">
+        <h3 className="text-2xl md:text-3xl font-extrabold text-gray-800 dark:text-gray-100 text-end mb-2 mt-20">
           {t("certificates")}
         </h3>
-        <div className="flex flex-row justify-start my-10 gap-8">
+        <div className="flex flex-wrap justify-center my-10 gap-8">
           <Link
             href={
               "https://www.credly.com/badges/a7977946-0f4d-4319-972c-d32b61dca599/public_url"
@@ -43,8 +43,8 @@ const Education = () => {
               alt=""
               width={200}
               height={200}
-              className="hover:opacity-70 transition-all transition-duration-300"
-            ></Image>
+              className="hover:opacity-70 transition duration-300"
+            />
           </Link>
           <Link
             href={
@@ -57,8 +57,8 @@ const Education = () => {
               alt=""
               width={200}
               height={200}
-              className="hover:opacity-70 transition-all transition-duration-300"
-            ></Image>
+              className="hover:opacity-70 transition duration-300"
+            />
           </Link>
           <Link href={"certificates/cert_nuclio.pdf"} target="_blank">
             <Image
@@ -66,8 +66,8 @@ const Education = () => {
               alt=""
               width={200}
               height={200}
-              className="hover:opacity-70 transition-all transition-duration-300"
-            ></Image>
+              className="hover:opacity-70 transition duration-300"
+            />
           </Link>
         </div>
       </div>

@@ -1,4 +1,3 @@
-// components/Hero.tsx
 "use client";
 import { motion } from "framer-motion";
 import { Link } from "@/i18n/navigation";
@@ -54,17 +53,15 @@ export default function Hero() {
 
   return (
     <motion.section
-      className="flex items-center justify-center px-4 text-center"
+      className="flex items-center justify-center px-4 sm:px-6 lg:px-8 text-center"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
       variants={sectionVariants}
     >
       <motion.div className="max-w-3xl space-y-8" variants={itemVariants}>
-        {/* Título “ola” */}
         <motion.h1
-          className="text-5xl md:text-7xl font-extrabold text-black drop-shadow-lg"
-          // controlamos el desfase entre letras
+          className="text-5xl md:text-7xl font-extrabold text-black dark:text-white drop-shadow-lg"
           initial="hidden"
           animate="visible"
           variants={{ visible: { transition: { staggerChildren: 0.07 } } }}
@@ -77,7 +74,7 @@ export default function Hero() {
         </motion.h1>
 
         <motion.p
-          className="text-lg md:text-2xl text-gray-900 max-w-2xl mx-auto"
+          className="text-lg md:text-2xl text-gray-900 dark:text-gray-300 max-w-2xl mx-auto"
           variants={itemVariants}
         >
           {t("description")}
@@ -89,7 +86,7 @@ export default function Hero() {
         >
           <MotionLink
             href="#projects-heading"
-            className="inline-block px-8 py-3 bg-blue-800 hover:bg-gray-900 text-white font-semibold rounded-lg"
+            className="inline-block px-8 py-3 bg-blue-800 hover:bg-gray-900 text-white font-semibold rounded-lg dark:bg-blue-600 dark:hover:bg-blue-700 dark:text-white"
             variants={buttonVariants}
             whileHover="hover"
             whileTap="tap"
@@ -99,8 +96,7 @@ export default function Hero() {
 
           <MotionLink
             href="#contact"
-            className="inline-block px-8 py-3 border-2 bg-black hover:border-black border-white text-white
-             hover:bg-white hover:text-gray-900 font-semibold rounded-lg"
+            className="inline-block px-8 py-3 border-2 bg-black text-white border-white hover:bg-white hover:text-gray-900 font-semibold rounded-lg dark:bg-gray-800 dark:border-gray-200 dark:text-white dark:hover:bg-gray-700 dark:hover:text-gray-200"
             variants={buttonVariants}
             whileHover="hover"
             whileTap="tap"
