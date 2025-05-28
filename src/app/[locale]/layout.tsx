@@ -4,7 +4,7 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import LangSwitch from "@/components/LangSwitch";
 import manrope from "../../../lib/fonts";
-import NavBar from "components/NavBar";
+import NavBar from "@/components/NavBar";
 import Background from "@/components/Background";
 import "@/app/globals.css";
 import { routing } from "@/i18n/routing";
