@@ -1,14 +1,19 @@
 // next.config.js
 const path = require("path");
-const nextIntl = require("next-intl/plugin");
 
-module.exports = nextIntl({
-  // Tu configuración de Next.js
+/** @type {import('next').NextConfig} */
+module.exports = {
+  i18n: {
+    locales: ["en", "es", "gl"],
+    defaultLocale: "es",
+  },
+
   webpack(config) {
+    // Alias '@' → './src'
     config.resolve.alias = {
-      ...(config.resolve.alias ?? {}),
+      ...(config.resolve.alias || {}),
       "@": path.resolve(__dirname, "src"),
     };
     return config;
   },
-});
+};
