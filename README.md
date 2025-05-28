@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mario Hinojosa – Desarrollador Web Full-Stack
 
-## Getting Started
+**Apasionado por la tecnología, con experiencia llevando proyectos propios de la idea al despliegue.**  
+Mantengo buenas prácticas y código limpio, destacando por mi eficiencia y comunicación; además, soy un compañero servicial, cordial y siempre dispuesto a ayudar. Ambicioso y en constante formación, aspiro a seguir ampliando mis conocimientos en distintas áreas del sector tecnológico.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📑 Contenido
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [🛠️ Habilidades](#%F0%9F%9B%B0%EF%B8%8F-habilidades)  
+- [💼 Experiencia](#%F0%9F%92%BC-experiencia)  
+- [🎓 Educación](#%F0%9F%8E%93-educación)  
+- [📜 Certificaciones](#%F0%9F%93%9C-certificaciones)  
+- [🚀 Proyectos Destacados](#%F0%9F%9A%80-proyectos-destacados)  
+- [🌐 Idiomas](#%F0%9F%8C%90-idiomas)  
+- [📫 Contacto](#%F0%9F%93%AB-contacto)  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Habilidades
 
-## Learn More
+- **Lenguajes:** JavaScript, TypeScript, HTML5, CSS3  
+- **Frameworks & Librerías:** React, Next.js, Node.js, Tailwind CSS  
+- **Bases de Datos:** MongoDB, NoSQL  
+- **Herramientas & DevOps:** Git, GitHub, CI/CD, Vercel, documentación  
+- **IA & LLMs:** ChatGPT en el flujo de trabajo  
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 💼 Experiencia
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Desarrollador Web Full-Stack & DevOps**  
+*eStudents* (Zaragoza, España) | 09/2024 – Presente  
+- Desarrollo y despliegue de funcionalidades en front-end y back-end, junto con su documentación.  
+- Versatilidad en el código: cubro todas las áreas, desde la base de datos hasta la interfaz de usuario.  
+- Participación en la toma de decisiones estratégicas, marketing y asignación de recursos.  
+- Adaptabilidad al entorno startup, pivotando recursos según feedback y mercado.  
+- **Stack:** Next.js, Node.js, MongoDB, Tailwind CSS, React, TypeScript.  
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎓 Educación
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Máster en Desarrollo Full-Stack** – Nuclio Digital School | 10/2023 – 05/2024  
+- **Aprendizaje autodidacta** – Contenidos de Internet | 08/2023 – Presente  
+
+---
+
+## 📜 Certificaciones
+
+- **Introducción a la Ciberseguridad** – Cisco Networking Academy  
+
+---
+
+## 🚀 Proyectos Destacados
+
+- **Hacienda Somos Todos**  
+  Pequeño proyecto que calcula el total aportado al Estado en forma de impuestos a lo largo de la vida.  
+  🔗 [Demo](https://haciendasomosotodos.vercel.app/) • [Código](https://github.com/galizaragoza/haciendasomosotodos)  
+  *Construido con TypeScript, Next.js & Tailwind CSS.*  
+
+- **Cyber Tarot**  
+  Visualiza los coleccionables de un videojuego con sus descripciones, disponible en 9 idiomas.  
+  🔗 [Demo](https://cyber-tarot.vercel.app/) • [Código](https://github.com/galizaragoza/cyber_tarot)  
+  *Desarrollado con React, Next.js & Tailwind CSS.*  
+
+- **TaskTalk**  
+  Proyecto grupal de fin de máster (puntuado con un 9.8), trabajado bajo SCRUM.  
+  Videollamadas, mensajería P2P y grupal, y tableros de gestión de tareas.  
+  *Tecnologías: React, WebSockets & Tailwind CSS.*  
+
+---
+
+## 🌐 Idiomas
+
+- 🇪🇸 Castellano – Nativo  
+- 🇬🇧 Inglés – Profesional  
+
+---
+
+## 📫 Contacto
+
+- **Email:** [galizaragozadev@gmail.com](mailto:galizaragozadev@gmail.com)  
+- **Teléfono:** +34 644 458 505  
+- **Ubicación:** Zaragoza, España  
+- **LinkedIn:** [linkedin.com/in/mario-hinojosa](https://www.linkedin.com/in/mario-hinojosa)  
+- **GitHub:** [github.com/galizaragoza](https://github.com/galizaragoza)  
+- **Credly:** [Credly Badges](https://www.credly.com/users/mario-hinojosa.9a72904a)  
