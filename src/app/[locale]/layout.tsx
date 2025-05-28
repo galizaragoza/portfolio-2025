@@ -16,18 +16,19 @@ export async function generateStaticParams() {
 export const metadata: Metadata = {
   title: "Mario Hinojosa Freire",
   description: "@galizaragozadev",
-  icons: {
-    icon: "/favIcon.svg",
-  },
+  icons: { icon: "/favIcon.svg" },
 };
 
 export default async function LocaleLayout({
   children,
-  params: { locale },
+  params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
+  // Ahora params es una Promise, así que la resolvemos:
+  const { locale } = await params;
+
   if (!hasLocale(routing.locales, locale)) notFound();
 
   const messages = (await import(`../../../messages/${locale}.json`)).default;
