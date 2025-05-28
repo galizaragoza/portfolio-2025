@@ -1,14 +1,12 @@
 // next.config.js
 const path = require("path");
-const createNextIntlPlugin = require("next-intl/plugin").default;
+const nextIntl = require("next-intl/plugin");
 
-module.exports = createNextIntlPlugin()({
-  // Aquí dentro es tu Next.js config
+module.exports = nextIntl({
+  // Tu configuración de Next.js
   webpack(config) {
-    // 1) preservamos los alias internos de Next.js
     config.resolve.alias = {
       ...(config.resolve.alias ?? {}),
-      // 2) añadimos el nuestro
       "@": path.resolve(__dirname, "src"),
     };
     return config;
