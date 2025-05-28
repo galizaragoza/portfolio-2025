@@ -29,7 +29,7 @@ export default function NavBar() {
         {t("experience")}
       </Link>
       <Link
-        href="#about"
+        href="#experience"
         className="text-base text-white hover:text-gray-600 transition-colors"
         onClick={() => setIsOpen(false)}
       >
