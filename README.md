@@ -80,8 +80,7 @@ Mantengo buenas prácticas y código limpio, destacando por mi eficiencia y comu
 
 ## 📫 Contacto
 
-- **Email:** [galizaragozadev@gmail.com](mailto:galizaragozadev@gmail.com)  
-- **Teléfono:** +34 644 458 505  
+- **Email:** [galizaragozadev@gmail.com](mailto:galizaragozadev@gmail.com)   
 - **Ubicación:** Zaragoza, España  
 - **LinkedIn:** [linkedin.com/in/mario-hinojosa](https://www.linkedin.com/in/mario-hinojosa)  
 - **GitHub:** [github.com/galizaragoza](https://github.com/galizaragoza)  
